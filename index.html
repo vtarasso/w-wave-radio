@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img src="images/header-logo.svg" alt="Логотип сайта">
+          </a>
+
+          <nav class="nav header__nav">
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a class="nav__link" href="#podcasts">Подкасты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#broadcasts">Передачи</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#guests">Гости</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#playlists">Плейлисты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О&nbsp;нас</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__buttons">
+            <button class="btn-reset btn-search header__btn">
+              <svg class="icon-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="btn-reset btn btn-black header__btn">Вход</button>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <ul class="header__items">
+            <li class="header__item">
+              <a class="header__link" href="#">Новости</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Блоги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Топы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Опросы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Рейтинги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Реклама</a>
+            </li>
+          </ul>
+
+          <div class="header__stream stream">
+            <div class="stream__prev">
+              <button class="btn-reset btn-play">
+                <svg class="icon-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5430)">
+                  <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                  </g>
+                  <defs>
+                  <clippath>
+                  <rect width="24" height="24" fill="white"/>
+                  </clippath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="stream__info">
+                <h4 class="stream__heading">Ранее в&nbsp;эфире</h4>
+                <p class="stream__name">&laquo;Музыка&raquo;</p>
+              </div>
+            </div>
+            <div class="stream__now">
+              <button class="btn-reset btn-play">
+                <svg class="icon-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5430)">
+                  <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                  </g>
+                  <defs>
+                  <clippath>
+                  <rect width="24" height="24" fill="white"/>
+                  </clippath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="stream__info">
+                <h4 class="stream__heading">Сейчас в&nbsp;эфире</h4>
+                <p class="stream__name">&laquo;Как так?&raquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__age-limit">
+            <span class="header__age">12+</span>
+          </div>
+        </div>
+      </div>
+    </header>
 </body>
 </html>
