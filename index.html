@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <title>Радио W-Wave</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
       <div class="container header__container">
         <div class="header__top">
@@ -529,7 +529,7 @@
             <div class="broadcasts__heading">
               <h2 class="section-title broadcasts__title">Передачи</h2>
               <h4 class="broadcasts__subtitle">Автор:</h4>
-              <!-- custom select  tommorow-->
+              <!-- custom select -->
               <div class="broadcasts__select">Пётр Дмитриевский</div>
             </div>
 
@@ -816,11 +816,213 @@
         </div>
       </section>
 
-      <section class="playlists" id="playlists"></section>
-      <section class="advertising"></section>
+      <section class="playlists" id="playlists">
+        <div class="container playlists__container">
+          <div class="playlists__aside">
+            <h2 class="section-title playlists__title">Плейлисты</h2>
+            <h3 class="playlists__genre">Жанр</h3>
+            <ul class="list-reset playlists__radio radio">
+              <li class="radio__item">
+                <input class="radio__input" id="postpunk" name="radio" type="radio" checked>
+                <label class="radio__label" for="postpunk">Постпанк</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="hardcore" name="radio" type="radio">
+                <label class="radio__label" for="hardcore">Хардкор</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="punkrock" name="radio" type="radio">
+                <label class="radio__label" for="punkrock">Панк-рок</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="rock" name="radio" type="radio">
+                <label class="radio__label" for="rock">Рок</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="progressrock" name="radio" type="radio">
+                <label class="radio__label" for="progressrock">Прогрессивный рок</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="electro" name="radio" type="radio">
+                <label class="radio__label" for="electro">Электронная музыка</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="classic" name="radio" type="radio">
+                <label class="radio__label" for="classic">Классическая музыка</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" id="naturesound" name="radio" type="radio">
+                <label class="radio__label" for="naturesound">Звуки природы и шума города</label>
+              </li>
+            </ul>
+            <div class="playlists__info">
+              <p class="playlists__descr">
+                Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
+              </p>
+              <span class="playlists__copyrigth">© 2021 l W-Wave</span>
+              <span class="playlists__raiting">
+                18+
+              </span>
+            </div>
+          </div>
+          <ul class="list-rest playlists__items">
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-ploho.jpg" alt="Обложка альбома группы - Плохо">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Ploho</h3>
+                  <p class="playlists__text">3 последних альбома</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-molchat.jpg" alt="Обложка альбома группы - Молчат Дома">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Molchat Doma</h3>
+                  <p class="playlists__text">Все песни</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-motorama.jpg" alt="Обложка альбома группы - Моторама">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Motorama</h3>
+                  <p class="playlists__text">Все синглы</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-human.jpg" alt="Обложка альбома группы - Хуман Тетрис">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Human Tetris</h3>
+                  <p class="playlists__text">3 последних альбома</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-buerak.jpg" alt="Обложка альбома группы - Буерак">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle">Буерак</h3>
+                  <p class="playlists__text">Все ЕР</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-jule.jpg" alt="Обложка альбома группы - Июльские Дни">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle">Июльские Дни</h3>
+                  <p class="playlists__text">Альбом &laquo;Колокол&raquo;</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-joy.jpg" alt="Обложка альбома группы - Джой Дивижн">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Joy Division</h3>
+                  <p class="playlists__text">Лучшее за всё время</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-cure.jpg" alt="Обложка альбома группы - Кюр">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">The Cure</h3>
+                  <p class="playlists__text">Лучшее за всё время</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-smiths.jpg" alt="Обложка альбома группы - Смиты">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">The Smiths</h3>
+                  <p class="playlists__text">Период 1984&ndash;1988</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-order.jpg" alt="Обложка альбома группы - Нью Ордер">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">New Order</h3>
+                  <p class="playlists__text">Хиты</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-bauhaus.jpg" alt="Обложка альбома группы - Баухаус">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Bauhaus</h3>
+                  <p class="playlists__text">Все синглы</p>
+                </div>
+              </a>
+            </li>
+            <li class="playlists__item">
+              <a class="playlists__link" href="#">
+                <!-- add flags ::after -->
+                <div class="playlists__cover">
+                  <img src="images/playlists/cover-gang.jpg" alt="Обложка альбома группы - Гэнг оф фор">
+                </div>
+                <div class="playlists__content">
+                  <h3 class="section-subtitle playlists__subtitle" lang="en">Gang Of Four</h3>
+                  <p class="playlists__text">3 последних альбома</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="advertising">
+        <div class="advertising__image">
+          <img src="images/radio-player.png" alt="Радио проигрыватель фирмы В-Вейв">
+        </div>
+      </section>
+
       <section class="about" id="about"></section>
     </main>
 
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>
