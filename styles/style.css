@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerLightItalic.woff2") format("woff2"),
+      url("../fonts/MullerLightItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+      url("../fonts/MullerRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+      url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.woff2") format("woff2"),
+      url("../fonts/MullerMedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+      url("../fonts/MullerBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+      url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+	--white: #ffffff;
+	--primary: #6d31ee;
+	--primary-shade: #4f28a5;
+	--primary-light: #aa9dfa;
+	--light-color: #e6e8ec;
+	--text-gray: #a1a6b4;
+	--shade-gray: #d2d5dd;
+	--light-color-40: rgba(230, 232, 236, 0.4);
+	--black: #121723;
+	--light-black: #292e39;
+	--red: #ff6f6f;
+	--promo-color: #f0d288;
+	--promo-color-shade: #bb973e;
+  --font-family: "Muller", "Arial", sans-serif;
+  --second-family: "Open Sans", "Arial", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
