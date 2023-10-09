@@ -267,13 +267,38 @@ p {
   border-radius: 90px;
 }
 
-/* .header__age::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 90px;
+/* hero */
+.hero {
   background-color: var(--white);
-} */
+}
+
+.hero__container {
+  padding: 90px 15px 118px;
+  background-image: url("../images/hero-bg.jpg");
+  background-position: 772px 30px;
+  background-size: 352px 380px;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  max-width: 54%;
+}
+
+.hero__title {
+  margin-bottom: 9px;
+  font-size: 6rem;
+}
+
+.hero__title--bold {
+  font-weight: 700;
+}
+
+.hero__title--italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__descr {
+  margin-bottom: 69px;
+  line-height: 1.5;
+}
