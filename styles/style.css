@@ -330,6 +330,14 @@ p {
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
 
+.podcasts__item:nth-child(n + 9) {
+  display: none;
+}
+
+.podcasts__item.is-visible {
+  display: flex;
+}
+
 .podcasts__image {
   position: relative;
   background-size: cover;
@@ -390,6 +398,3 @@ p {
   margin-right: 2px;
 }
 
-.podcasts__btn {
-
-}
