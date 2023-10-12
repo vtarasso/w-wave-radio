@@ -14,7 +14,7 @@ showMore.addEventListener('click', () => {
   }
 });
 
-{/* <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+/* <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 $(".podcasts__main-content").each(function() {
   let more = $(this).find(".podcasts__btn");
   let hide = $(this).find(".podcasts__item--hide");
@@ -23,4 +23,4 @@ $(".podcasts__main-content").each(function() {
     hide.slideToggle();
     more.text(more.text() == "Скрыть" ? "Ещё подкасты" : "Скрыть");
   });
-}); */}
+}); */
