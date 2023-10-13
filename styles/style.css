@@ -563,3 +563,22 @@ p {
   font-style: italic;
 }
 
+.boadcasts__mic {
+  margin-bottom: 24px;
+  width: 65px;
+  height: 89px;
+  background-image: url("../images/broadcasts/mic.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.broadcasts__btn {
+  margin-bottom: 12px;
+  padding: 9px 54px;
+}
+
+.broadcats__text {
+  line-height: 1.5;
+  color: var(--text-gray);
+}
