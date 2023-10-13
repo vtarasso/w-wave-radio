@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Радио W-Wave</title>
   </head>
@@ -922,8 +923,28 @@
             <div class="broadcasts__heading">
               <h2 class="section-title broadcasts__title">Передачи</h2>
               <h4 class="broadcasts__author">Автор:</h4>
-              <!-- custom select -->
-              <div class="broadcasts__select">Пётр Дмитриевский</div>
+              <div class="broadcasts__select">
+                <select class="js-choice select" name="select-author">
+                  <option value="Дмитрий Гутенберг">Дмитрий Гутенберг</option>
+                  <option value="Татьяна Флеганова">Татьяна Флеганова</option>
+                  <option value="Анна Васильева">Анна Васильева</option>
+                  <option value="Пётр Дмитриевский">Пётр Дмитриевский</option>
+                </select>
+              </div>
+              <!-- <div class="broadcasts__select select">
+                <div class="select__header flex">
+                  <span class="select__current">Дмитрий Гутенберг</span>
+                  <svg class="icon-center select__icon" aria-hidden="true" width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65689 6.60645L1.35359 1.30315L0.646484 2.01025L6.65689 8.02066L12.6673 2.01025L11.9602 1.30315L6.65689 6.60645Z" fill="#A1A6B4"/>
+                  </svg>
+                </div>
+                <ul class="list-reset select__body">
+                  <li class="select__item">Дмитрий Гутенберг</li>
+                  <li class="select__item">Татьяна Флеганова</li>
+                  <li class="select__item">Анна Васильева</li>
+                  <li class="select__item">Пётр Дмитриевский</li>
+                </ul>
+              </div> -->
             </div>
 
             <div class="broadcasts__archive">
@@ -1645,6 +1666,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="scripts/select.js"></script>
     <script src="scripts/show-more.js"></script>
+
   </body>
 </html>
