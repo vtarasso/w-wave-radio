@@ -428,13 +428,25 @@ p {
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
 
-.podcasts__item:nth-child(n + 9) {
+.podcasts__item--hide {
   display: none;
+  animation: shows 0.8s ease-in-out;
 }
 
-.podcasts__item.is-visible {
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show {
   display: flex;
 }
+
+
 
 .podcasts__image {
   position: relative;
