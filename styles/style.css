@@ -310,8 +310,52 @@ p {
   color: var(--white);
 }
 
+.modal__title {
+  margin-bottom: 16px;
+}
+
+.modal__text {
+  margin-bottom: 29px;
+  font-size: 2rem;
+}
+
 .modal__link {
   color: var(--primary);
+}
+
+.modal__form {
+  margin-bottom: 29px;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.modal__input {
+  padding: 10px 10px 10px 32px;
+  min-width: 526px;
+  min-height: 70px;
+  font-size: 2rem;
+  color: var(--text-gray);
+  border: 1px solid var(--white);
+  border-radius: 40px;
+  background-color: transparent;
+}
+
+.modal__btn {
+  padding: 23px 54px;
+}
+
+.modal__bottom {
+  padding-top: 29px;
+  border-top: 1px solid var(--light-color-40);
+}
+
+.modal__subtitle {
+  margin-bottom: 28px;
+}
+
+.modal__items {
+  gap: 40px;
+  align-items: center;
 }
 
 .modal.open {
