@@ -2,7 +2,7 @@ document.getElementById('load-more').addEventListener('click', function () {
   const hiddenBlocks = document.querySelectorAll('.podcasts__item--hide');
   const visibleBlocks = document.querySelectorAll('.show');
   const showMoreButton = document.getElementById('load-more')
-  
+
   // Определяем, сколько блоков нужно показать
   const numToShow = 4;
   const startIndex = visibleBlocks.length;
@@ -23,6 +23,7 @@ document.getElementById('load-more').addEventListener('click', function () {
     showMoreButton.style.display = 'none';
   }
 });
+
 
 
 // const showMore = document.querySelector('.podcasts__btn');

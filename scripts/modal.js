@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Открытие модального окна регистрации
+  // Открытие модального окна регистрации из окна входа
   document.getElementById('login-modal-btn').addEventListener('click', () => {
     closeModal('signIn-modal');
     openModal('login-modal');
   });
 
-  // Открытие модального окна входа из регистрации
+  // Открытие модального окна входа из окна регистрации
   document.getElementById('signIn-modal-log').addEventListener('click', () => {
     closeModal('login-modal');
     openModal('signIn-modal');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     closeModal('login-modal');
   });
 
-  // Закрыть м.о. при клике вне его - входа
+  // Закрыть м.о. при клике вне него (вход)
   document.querySelector('#signIn-modal .modal__box').addEventListener('click', event => {
     event._isClickWithInModal = true
   })
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.currentTarget.classList.remove('open')
   })
 
-  // Закрыть м.о. при клике вне его - регистрации
+  // Закрыть м.о. при клике вне него (регистрация)
   document.querySelector('#login-modal .modal__box').addEventListener('click', event => {
     event._isClickWithInModal = true
   })
