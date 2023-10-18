@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let result = true;
     const allInputs = form.querySelectorAll('input');
 
-    // Правила для формы валидации
+    // Правила для валидации формы
     for (const input of allInputs) {
       removeError(input);
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (input.dataset.noCyrillic == "true") {
         if (!/^[а-яА-ЯЁё\s]+$/.test(input.value)) {
           removeError(input);
-          createError(input, 'Логин должно содержать только кириллические символы');
+          createError(input, 'Логин должен содержать только кириллические символы');
           result = false;
         }
       }
