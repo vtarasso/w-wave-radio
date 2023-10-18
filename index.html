@@ -131,13 +131,13 @@
             Если у вас ещё нет аккаунта, <button class="btn-reset modal__link" id="login-modal-btn">зарегистрируйтесь</button>
           </p>
 
-          <form  class="modal__form flex" action="#" method="post">
-            <label class="modal__label" for="login">
-              <input class="modal__input" type="text" name="login" aria-label="Введие войти" placeholder="Логин" required>
-            </label>
-            <label class="modal__label" for="login">
-              <input class="modal__input" type="password" name="password" aria-label="Введие пароль" placeholder="Пароль" required>
-            </label>
+          <form  class="modal__form flex" action="">
+            <div class="modal__input-box">
+              <input class="modal__input" type="text" name="login" aria-label="Введите логин" placeholder="Логин">
+            </div>
+            <div class="modal__input-box">
+              <input class="modal__input" type="password" name="password" aria-label="Введите пароль" placeholder="Пароль">
+            </div>
             <div class="modal__wrap-btn">
               <button class="btn-reset btn btn-filling modal__btn">Войти</button>
             </div>
@@ -196,13 +196,13 @@
             Если у вас уже есть аккаунт, <button class="btn-reset modal__link" id="signIn-modal-log">войдите</button>
           </p>
 
-          <form  class="modal__form flex" action="#" method="post">
-            <label class="modal__label" for="login">
-              <input class="modal__input" type="text" name="login" aria-label="Введие войти" placeholder="Логин" required>
-            </label>
-            <label class="modal__label" for="login">
-              <input class="modal__input" type="password" name="password" aria-label="Введие пароль" placeholder="Пароль" required>
-            </label>
+          <form  class="modal__form flex" action="">
+            <div class="modal__input-box">
+              <input class="modal__input" type="text" name="login" aria-label="Введите логин" placeholder="Логин">
+            </div>
+            <div class="modal__input-box">
+              <input class="modal__input" type="password" name="password" aria-label="Введите пароль" placeholder="Пароль">
+            </div>
             <div class="modal__wrap-btn">
               <button class="btn-reset btn btn-filling modal__btn">Зарегистрируйтесь</button>
             </div>
@@ -1783,6 +1783,7 @@
     </footer>
 
     <script defer src="scripts/modal.js"></script>
+    <script defer src="scripts/validation.js"></script>
     <script defer src="scripts/show-more.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <script src="scripts/select.js"></script>

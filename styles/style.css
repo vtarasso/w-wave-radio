@@ -67,6 +67,7 @@
 	--black: #121723;
 	--light-black: #292e39;
 	--red: #ff6f6f;
+  --error: #d52b1e;
 	--promo-color: #f0d288;
 	--promo-color-shade: #bb973e;
 }
@@ -446,7 +447,21 @@ p {
   display: flex;
 }
 
+.modal__input-box {
+  position: relative;
+}
 
+.error-label {
+  position: absolute;
+  top: 8px;
+  left: 36px;
+  font-size: 1.2rem;
+  color: var(--error);
+}
+
+.error .modal__input {
+  border-color: var(--error);
+}
 
 .podcasts__image {
   position: relative;

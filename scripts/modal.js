@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Функция очищения инпутов
+  function clearInput() {
+    const inputs = document.querySelectorAll('.modal__input');
+    inputs.forEach(input => {
+      input.value = '';
+    });
+  }
+
   // Функция для открытия модального окна
   function openModal(modalId) {
     const modal = document.getElementById(modalId);
@@ -12,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.remove('open');
+      // setTimeout(clearInput, 1000)
+      clearInput()
     }
   }
 
@@ -28,8 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // Закрытие модального окна при нажатии клавиши "Escape"
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      closeModal('signIn-modal');
-      closeModal('login-modal');
+      if (document.getElementById('login-modal').classList.contains('open')) {
+        closeModal('login-modal');
+      } else if (document.getElementById('signIn-modal').classList.contains('open')) {
+        closeModal('signIn-modal');
+      }
     }
   });
 
@@ -58,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('signIn-modal').addEventListener('click', event => {
     if (event._isClickWithInModal) return
     event.currentTarget.classList.remove('open')
+    // setTimeout(clearInput, 1000)
+    clearInput()
   })
 
   // Закрыть м.о. при клике вне него (регистрация)
@@ -68,5 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('login-modal').addEventListener('click', event => {
     if (event._isClickWithInModal) return
     event.currentTarget.classList.remove('open')
+    // setTimeout(clearInput, 1000)
+    clearInput()
   })
 });
