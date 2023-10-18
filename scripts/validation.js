@@ -26,17 +26,46 @@ function validation(form) {
 
   const allInputs = form.querySelectorAll('input')
 
-  // Если поля пустые возвращаем ошибку
+  // правила валидации
   for (const input of allInputs) {
     removeError(input)
 
-    if(input.value === "") {
-      console.log('ошибка поля')
-      createError(input, 'Ошибка')
-      result = false
+    // Проверка поля на кирилические символы
+    if (input.dataset.noCyrillic == "true") {
+      if (!/^[а-яА-ЯЁё\s]+$/.test(input.value)) {
+        removeError(input);
+        createError(input, 'Логин должно содержать только кирилические символы');
+        result = false;
+      }
+    }
+
+    // Проверка поля на минимальное количество символов
+    if(input.dataset.minLength) {
+      if(input.value.length < input.dataset.minLength) {
+        removeError(input)
+        createError(input, `Минимальное количество символов: ${input.dataset.minLength}`)
+        result = false
+      }
+    }
+
+    // Проверка поля на максимальное количество символов
+    if(input.dataset.maxLength) {
+      if(input.value.length > input.dataset.maxLength) {
+        removeError(input)
+        createError(input, `Максимальное количество символов: ${input.dataset.maxLength}`)
+        result = false
+      }
+    }
+
+    // Проверка поля на обязательное заполнение
+    if(input.dataset.required == "true") {
+      if(input.value === "") {
+        removeError(input)
+        createError(input, 'Ошибка')
+        result = false
+      }
     }
   }
-
 
   return result
 }
@@ -50,7 +79,7 @@ allForms.forEach(form => {
     event.preventDefault();
 
     if (validation(this) === true) {
-      alert('Форма успешно проверена');
+      alert('Форма успешно заполнена');
     }
   });
 });
