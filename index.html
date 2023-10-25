@@ -35,16 +35,22 @@
               </li>
             </ul>
           </nav>
-          <!-- search tommorow -->
+
           <div class="header__buttons flex">
-            <button class="btn-reset btn-search header__btn">
-              <svg class="icon-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+            <form class="search-form flex" id="search-form" action="#">
+              <div class="search-form__inner">
+                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+              </div>
+              <button class="btn-reset search-form__btn header__btn" type="submit" aria-label="Найти">
+                <svg class="icon-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
             <button class="btn-reset btn btn-dark header__btn" id="modal-open">Вход</button>
           </div>
+
         </div>
       </div>
 
@@ -1782,6 +1788,7 @@
       </div>
     </footer>
 
+    <script src="scripts/search.js"></script>
     <script defer src="scripts/main-modal-validation.js"></script>
     <script defer src="scripts/show-more.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
