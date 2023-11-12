@@ -1,4 +1,5 @@
 const search = document.getElementById('search-form')
+
 const body = document.querySelector('body');
 
 search.addEventListener('click', function (e) {
